@@ -1,4 +1,7 @@
+import { CardCarousel } from "@/components/CardCarousel";
 import Hero from "@/components/Hero";
+import { TimelineDemo } from "@/components/Timeline";
+import TimeLinePort from "@/components/TimeLinePort";
 import Image from "next/image";
 
 export default function Home() {
@@ -11,6 +14,7 @@ export default function Home() {
       {/* This is the actual body of the web */}
       <div className="max-w-7xl w-full">
         <Hero />
+        <TimeLinePort />
       </div>
     </main>
   );
