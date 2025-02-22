@@ -26,6 +26,7 @@ type Card = {
   src: string | StaticImageData;
   title: string;
   category: string;
+  techStack: { techName: string; isHighlight: boolean }[];
   content: React.ReactNode;
 };
 
@@ -232,6 +233,19 @@ export const Card = ({
               >
                 {card.title}
               </motion.p>
+              <div className="w-full pt-5 flex gap-3 overflow-x-scroll no-scrollbar flex-wrap">
+                {card.techStack?.map((e, i) => (
+                  <div
+                    className={`${
+                      e.isHighlight ? "bg-yellow-600 text-white" : "bg-white-200 dark:text-black-100 "
+                    } uppercase px-4 py-2 font-semibold rounded-xl flex justify-center items-center whitespace-nowrap`}
+                    key={i}
+                  >
+                    {e.techName}
+                  </div>
+                ))}
+              </div>
+
               <div className="py-10">{card.content}</div>
             </motion.div>
           </div>
@@ -242,11 +256,11 @@ export const Card = ({
         onClick={handleOpen}
         className="rounded-3xl bg-gray-100 dark:bg-neutral-900 h-80 w-56 md:h-[40rem] md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10"
       >
-        <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/50 via-transparent to-transparent z-30 pointer-events-none" />
+        <div className="absolute h-full top-0 inset-x-0 bg-gradient-to-b from-black/80 via-transparent to-transparent z-30 pointer-events-none" />
         <div className="relative z-40 p-8">
           <motion.p
             layoutId={layout ? `category-${card.category}` : undefined}
-            className="text-white text-sm md:text-base font-medium font-sans text-left"
+            className="text-white text-sm md:text-base font-medium font-sans text-left hidden md:block"
           >
             {card.category}
           </motion.p>

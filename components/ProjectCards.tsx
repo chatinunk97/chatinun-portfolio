@@ -2,7 +2,9 @@
 import Image from "next/image";
 import React from "react";
 import rankGame from "@/public/rankGame.gif";
+import cloudClock from "@/public/cloudClock.gif";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
+import { RankingGame } from "@/utils/data";
 
 export function ProjectCards() {
   const cards = data.map((card, index) => (
@@ -56,18 +58,48 @@ const data = [
     category: "Graph - Depth First Search",
     title: "Ranking Game",
     src: rankGame,
-    content: <DummyContent />,
+    techStack: [
+      { techName: "Data Structure", isHighlight: true },
+      { techName: "Algorithm", isHighlight: true },
+      { techName: "Typescript", isHighlight: false },
+      { techName: "React", isHighlight: false },
+      { techName: "Express", isHighlight: false },
+      { techName: "Shadcn", isHighlight: false },
+      { techName: "Tailwind CSS", isHighlight: false },
+    ],
+    content: <RankingGame />,
   },
   {
     category: "Google Maps API Nodemailer",
     title: "Employee Clock In App",
-    src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: cloudClock,
+    techStack: [
+      { techName: "Google Map API", isHighlight: true },
+      { techName: "Nodemailer", isHighlight: true },
+      { techName: "Team Leader", isHighlight: true },
+      { techName: "React", isHighlight: false },
+      { techName: "Express", isHighlight: false },
+      { techName: "Prisma", isHighlight: false },
+      { techName: "JSON web token", isHighlight: false },
+      { techName: "Shadcn", isHighlight: false },
+      { techName: "Tailwind CSS", isHighlight: false },
+      { techName: "Postgres", isHighlight: false },
+    ],
     content: <DummyContent />,
   },
   {
     category: "Authentication User Manager",
     title: "Mini WMS & POS",
     src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    techStack: [
+      { techName: "JSON web token", isHighlight: true },
+      { techName: "Authentication Flow", isHighlight: true },
+      { techName: "React", isHighlight: true },
+      { techName: "Express", isHighlight: true },
+      { techName: "Prisma", isHighlight: false },
+      { techName: "Tailwind CSS", isHighlight: false },
+      { techName: "MySQL", isHighlight: false },
+    ],
     content: <DummyContent />,
   },
 
@@ -75,18 +107,26 @@ const data = [
     category: "CI/CD GitHub Actions AWS",
     title: "CI/CD Pipeline Demo: Code to AWS Deployment",
     src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    techStack: [
+      { techName: "CI/CD", isHighlight: true },
+      { techName: "Github Actions", isHighlight: true },
+      { techName: "Docker", isHighlight: false },
+      { techName: "AWS-EC2", isHighlight: false },
+      { techName: "Docker Hub", isHighlight: false },
+    ],
     content: <DummyContent />,
   },
   {
     category: "Generative AI",
     title: "AI-Powered Budget Advisor",
+    techStack: [
+      { techName: "Generative AI", isHighlight: true },
+      { techName: "Gemini API", isHighlight: true },
+      { techName: "Next JS", isHighlight: false },
+      { techName: "Tailwind CSS", isHighlight: false },
+      { techName: "Firebase", isHighlight: false },
+    ],
     src: "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    content: <DummyContent />,
-  },
-  {
-    category: "Hiring",
-    title: "Hiring for a Staff Software Engineer",
-    src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: <DummyContent />,
   },
 ];
