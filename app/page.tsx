@@ -13,7 +13,7 @@ export default function Home() {
       <div className="max-w-5xl w-full">
         <Hero />
         <ProjectCards />
-        <FloatingNavBar />
+        {/* <FloatingNavBar /> */}
       </div>
     </main>
   );

@@ -67,6 +67,8 @@ const data = [
       { techName: "Shadcn", isHighlight: false },
       { techName: "Tailwind CSS", isHighlight: false },
     ],
+    demo: "https://chatinunk97.github.io/ranking_game_ch/",
+    github: "https://github.com/chatinunk97/ranking_game_ch",
     content: <RankingGame />,
   },
   {
@@ -85,6 +87,8 @@ const data = [
       { techName: "Tailwind CSS", isHighlight: false },
       { techName: "Postgres", isHighlight: false },
     ],
+    demo: "https://stock-lite-front.vercel.app/",
+    github: "https://github.com/chatinunk97/clockin-React",
     content: <DummyContent />,
   },
   {
@@ -100,6 +104,8 @@ const data = [
       { techName: "Tailwind CSS", isHighlight: false },
       { techName: "MySQL", isHighlight: false },
     ],
+    demo: "https://clockin-react.vercel.app/",
+    github: "https://github.com/chatinunk97/StockLite_Front",
     content: <DummyContent />,
   },
 
@@ -114,6 +120,7 @@ const data = [
       { techName: "AWS-EC2", isHighlight: false },
       { techName: "Docker Hub", isHighlight: false },
     ],
+    github: "https://github.com/chatinunk97/ci-cd-learning",
     content: <DummyContent />,
   },
   {

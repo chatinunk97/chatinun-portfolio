@@ -16,6 +16,7 @@ import { cn } from "@/lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
 import Image, { ImageProps, StaticImageData } from "next/image";
 import { useOutsideClick } from "@/hooks/use-outside-click";
+import { FaGithub } from "react-icons/fa";
 
 interface CarouselProps {
   items: JSX.Element[];
@@ -27,6 +28,8 @@ type Card = {
   title: string;
   category: string;
   techStack: { techName: string; isHighlight: boolean }[];
+  demo?: string;
+  github?: string;
   content: React.ReactNode;
 };
 
@@ -229,16 +232,38 @@ export const Card = ({
               </motion.p>
               <motion.p
                 layoutId={layout ? `title-${card.title}` : undefined}
-                className="text-2xl md:text-5xl font-semibold text-neutral-700 mt-4 dark:text-white"
+                className="text-2xl md:text-5xl font-semibold text-neutral-700 mt-4 dark:text-white flex gap-5 justify-between items-center"
               >
                 {card.title}
+                <div className="flex gap-2 justify-center items-center">
+                  {card.demo && (
+                    <a
+                      className="rounded-full text-xs md:text-lg px-2 py-4 bg-red-400 cursor-pointer"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={card.demo}
+                    >
+                      Demo
+                    </a>
+                  )}
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={card.github}
+                    className="text-[50px] md:text-[60px] "
+                  >
+                    <FaGithub />
+                  </a>
+                </div>
               </motion.p>
-              <div className="w-full pt-5 flex gap-3 overflow-x-scroll no-scrollbar flex-wrap">
+              <div className="w-full pt-5 flex gap-1 md:gap-3 overflow-x-scroll no-scrollbar flex-wrap">
                 {card.techStack?.map((e, i) => (
                   <div
                     className={`${
-                      e.isHighlight ? "bg-yellow-600 text-white" : "bg-white-200 dark:text-black-100 "
-                    } uppercase px-4 py-2 font-semibold rounded-xl flex justify-center items-center whitespace-nowrap`}
+                      e.isHighlight
+                        ? "bg-yellow-600 text-white"
+                        : "bg-white-200 dark:text-black-100 "
+                    } uppercase px-3 py-1 font-semibold rounded-md text-xs md:text-lg flex justify-center items-center whitespace-nowrap`}
                     key={i}
                   >
                     {e.techName}
