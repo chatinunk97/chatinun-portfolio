@@ -11,7 +11,6 @@ export default function Home() {
     >
       {/* This is the actual body of the web */}
       <div className="max-w-5xl w-full">
-   
         <Hero />
         <ProjectCards />
         <FloatingNavBar />

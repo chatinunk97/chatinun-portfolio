@@ -8,7 +8,7 @@ import TechStackHero from "./TechStackHero";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
+    <div className="pb-20 md:p-28 ">
       <div>
         <Spotlight
           className="top-40 -left-10 md:-lef5-32 md:-top-20 h-screen"
