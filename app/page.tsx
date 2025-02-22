@@ -1,8 +1,7 @@
-import { CardCarousel } from "@/components/CardCarousel";
+import { ProjectCards } from "@/components/ProjectCards";
 import Hero from "@/components/Hero";
-import { TimelineDemo } from "@/components/Timeline";
-import TimeLinePort from "@/components/TimeLinePort";
-import Image from "next/image";
+import { TimelineComp } from "@/components/Timeline";
+import { FloatingNavBar } from "@/components/FloatingNav";
 
 export default function Home() {
   return (
@@ -12,9 +11,11 @@ export default function Home() {
     justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5"
     >
       {/* This is the actual body of the web */}
-      <div className="max-w-7xl w-full">
+      <div className="max-w-5xl w-full">
+   
         <Hero />
-        <TimeLinePort />
+        <ProjectCards />
+        <FloatingNavBar />
       </div>
     </main>
   );

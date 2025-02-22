@@ -3,6 +3,7 @@ import { Spotlight } from "./ui/spotlight";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { FaLocationArrow } from "react-icons/fa";
 import ButtonMagic from "./ButtonMagic";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -36,11 +37,13 @@ const Hero = () => {
           <p className="text-center md:tracking-wide mb-4 text-sm md:text-lg lg:text-2xl">
             Hi, I'm Chatinun, a Trilingual Developer based in Japan
           </p>
-          <ButtonMagic
-            title={"Show my Work"}
-            icon={<FaLocationArrow />}
-            position="right"
-          />
+          <Link href={"/#projects"}>
+            <ButtonMagic
+              title={"Show my Work"}
+              icon={<FaLocationArrow />}
+              position="right"
+            />
+          </Link>
         </div>
       </div>
     </div>
