@@ -11,11 +11,8 @@ const TimeLinePort = () => {
   };
   return (
     <>
-      <button onClick={handleToggle}>
-        {" "}
-        {isCardOn ? "Toggle to Timeline" : "Toggle to Projects"}{" "}
-      </button>
-      {isCardOn ? <CardCarousel /> : <TimelineDemo />}
+      <h1>wow</h1>
+      <CardCarousel /> <TimelineDemo />
     </>
   );
 };
