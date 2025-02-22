@@ -1,6 +1,6 @@
 import { ProjectCards } from "@/components/ProjectCards";
 import Hero from "@/components/Hero";
-import { FloatingNavBar } from "@/components/FloatingNav";
+// import { FloatingNavBar } from "@/components/FloatingNav";
 
 export default function Home() {
   return (
