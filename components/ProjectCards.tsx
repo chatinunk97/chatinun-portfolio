@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import rankGame from "@/public/rankGame.gif";
 import cloudClock from "@/public/cloudClock.gif";
+import stockLite from "@/public/stockLite.png";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
 import { RankingGame } from "@/utils/data";
 
@@ -94,7 +95,7 @@ const data = [
   {
     category: "Authentication User Manager",
     title: "Mini WMS & POS",
-    src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: stockLite,
     techStack: [
       { techName: "JSON web token", isHighlight: true },
       { techName: "Authentication Flow", isHighlight: true },

@@ -230,7 +230,7 @@ export const Card = ({
               >
                 {card.category}
               </motion.p>
-              <motion.p
+              <motion.div
                 layoutId={layout ? `title-${card.title}` : undefined}
                 className="text-2xl md:text-5xl font-semibold text-neutral-700 mt-4 dark:text-white flex gap-5 justify-between items-center"
               >
@@ -255,7 +255,7 @@ export const Card = ({
                     <FaGithub />
                   </a>
                 </div>
-              </motion.p>
+              </motion.div>
               <div className="w-full pt-5 flex gap-1 md:gap-3 overflow-x-scroll no-scrollbar flex-wrap">
                 {card.techStack?.map((e, i) => (
                   <div
