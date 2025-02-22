@@ -1,6 +1,5 @@
 import { ProjectCards } from "@/components/ProjectCards";
 import Hero from "@/components/Hero";
-import { TimelineComp } from "@/components/Timeline";
 import { FloatingNavBar } from "@/components/FloatingNav";
 
 export default function Home() {

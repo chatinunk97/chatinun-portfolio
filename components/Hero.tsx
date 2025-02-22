@@ -4,6 +4,7 @@ import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { FaLocationArrow } from "react-icons/fa";
 import ButtonMagic from "./ButtonMagic";
 import Link from "next/link";
+import TechStackHero from "./TechStackHero";
 
 const Hero = () => {
   return (
@@ -35,7 +36,7 @@ const Hero = () => {
             words="Fueled by Innovation, Driven to learn, Built to Create"
           />
           <p className="text-center md:tracking-wide mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I'm Chatinun, a Trilingual Developer based in Japan
+            Hi, I&apos;m Chatinun, a Trilingual Developer based in Japan
           </p>
           <Link href={"/#projects"}>
             <ButtonMagic
@@ -44,6 +45,7 @@ const Hero = () => {
               position="right"
             />
           </Link>
+          <TechStackHero />
         </div>
       </div>
     </div>
