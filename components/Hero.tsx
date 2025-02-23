@@ -24,9 +24,9 @@ const LanguagePopup = () => {
         </TooltipTrigger>
         <TooltipContent>
           <div className="flex gap-4 p-2 px-4 bg-white-200 rounded-lg">
-            <Image src={japan} alt="japan" width={30} height={30} />
-            <Image src={eng} alt="eng" width={30} height={30} />
-            <Image src={thai} alt="thai" width={30} height={30} />
+            <img src="japan.png" alt="japan" width={30} height={30} />
+            <img src="united-kingdom.png" alt="eng" width={30} height={30} />
+            <img src="thailand.png" alt="thai" width={30} height={30} />
           </div>
         </TooltipContent>
       </Tooltip>

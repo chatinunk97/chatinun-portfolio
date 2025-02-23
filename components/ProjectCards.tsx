@@ -6,10 +6,10 @@ import cloudClock from "@/public/cloudClock.gif";
 import stockLite from "@/public/stockLite.png";
 import cicd from "@/public/cicd.png";
 import aiadvisor from "@/public/aiadvisor.png";
-import Image from "next/image";
 import rankingShot from "@/public/rankingShot.png";
 import dfs from "@/public/dfs.png";
 import resultCheck from "@/public/resultCheck.png";
+import ReactPlayer from "react-player";
 export const RankingGameData = () => {
   return (
     <>
@@ -28,9 +28,9 @@ export const RankingGameData = () => {
           to intelligently eliminate unnecessary matches, resolving indirect
           wins and optimizing the ranking process.
         </p>
-        <Image
-          src={rankingShot}
-          alt="Macbook mockup from Aceternity UI"
+        <img
+          src="rankingShot.png"
+          alt="ranking-screen"
           height="500"
           width="500"
           className="h-full w-full mx-auto object-contain"
@@ -40,9 +40,9 @@ export const RankingGameData = () => {
         <span className="text-base md:text-3xl font-sans font-bold text-neutral-200 dark:text-neutral-200">
           Optimized Ranking Using Graphs and DFS
         </span>
-        <Image
-          src={dfs}
-          alt="Macbook mockup from Aceternity UI"
+        <img
+          src="dfs.png"
+          alt="dfs-algo-explanation"
           height="500"
           width="500"
           className="h-full w-full mx-auto object-contain rounded-lg"
@@ -72,9 +72,9 @@ export const RankingGameData = () => {
           over 2, 3, 4, and 5 without extra matches. This minimizes comparisons
           significantly.
         </p>
-        <Image
-          src={resultCheck}
-          alt="Result check image"
+        <img
+          src="resultCheck.png"
+          alt="Result-check-img"
           height="500"
           width="500"
           className="h-full w-full mx-auto object-contain"
@@ -99,19 +99,26 @@ export const CloudClockData = () => {
           reporting, helping employees and HR managers streamline processes with
           an intuitive interface.
         </p>
+        <img src="cloudClockScreens.png"></img>
       </div>
-
       <div className="bg-neutral-800  dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
         <span className="text-base md:text-3xl font-sans font-bold text-neutral-200 dark:text-neutral-200">
           Key Features of ClockIn System
         </span>
-
-        <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
-          <span className="font-semibold text-white">Validation Features</span>:
-          The system supports Google account and username/password login,
-          location checking, and validation for every user action. For mobile
-          users, location validation ensures accurate time tracking.
-        </p>
+        <div className="w-full flex items-center justify-center gap-5">
+          <ReactPlayer
+            url="https://vimeo.com/1059399743/32c4199773?share=copy"
+            width="150px"
+            height="360px"
+            controls
+          />
+          <ReactPlayer
+            url="https://vimeo.com/1059437563/97c7c85fa4?share=copy"
+            width="640px"
+            height="360px"
+            controls
+          />
+        </div>
         <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
           <span className="font-semibold text-white">Clock In/Clock Out</span>:
           Employees can clock in or out via GPS-based validation. If the user is
@@ -119,12 +126,65 @@ export const CloudClockData = () => {
           per day are allowed, with the time, date, and GPS data captured for
           each action.
         </p>
+      </div>
+      <div className="bg-neutral-800  dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
+        <p className="text-neutral-400 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+          <span className="font-semibold text-white">
+            Batch Register Employee Accounts
+          </span>
+        </p>
+        <div className="flex justify-center gap-5">
+          <ReactPlayer
+            url="https://vimeo.com/1059434867/2a1785f238?share=copy"
+            width="640px"
+            height="360px"
+            controls
+          />
+        </div>{" "}
+        <p className="text-neutral-400 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+          HR can efficiently import and create employee accounts in bulk by
+          defining their usernames, emails, and other details in an Excel file,
+          then uploading it to the system.
+        </p>
+      </div>
+      <div className="bg-neutral-800  dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
+        <p className="text-neutral-400 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+          <span className="font-semibold text-white">
+            Setup password securely via email
+          </span>
+        </p>
+        <div className="flex justify-center gap-5">
+          <ReactPlayer
+            url="https://vimeo.com/1059439803/c194bd04ad?share=copy"
+            width="640px"
+            height="360px"
+            controls
+          />
+        </div>{" "}
+        <p className="text-neutral-400 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+          HR or Admin does not have the right to set up passwords. Employees
+          will set up their own passwords via email, and the passwords will be
+          securely hashed and stored in the database
+        </p>
+      </div>
+      <div className="bg-neutral-800  dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
+        <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+          <span className="font-semibold text-white">Validation Features</span>:
+          The system supports username/password login, location checking, and
+          validation for every user action. For mobile users, location
+          validation ensures accurate time tracking.
+        </p>
+      </div>
+      <div className="bg-neutral-800  dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
+        {" "}
         <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
           <span className="font-semibold text-white">Employee Reports</span>:
           Users can view their clock-in history with filters for date range,
           department, or position. Reports are exportable to Excel/CSV for easy
           HR management.
-        </p>
+        </p>{" "}
+      </div>{" "}
+      <div className="bg-neutral-800  dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
         <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
           <span className="font-semibold text-white">
             Form Submits & Approvals
@@ -132,8 +192,9 @@ export const CloudClockData = () => {
           : Employees can submit leave requests (holiday, sick leave) and make
           adjustments to clock-in/clock-out times. Admins, HR, or Managers can
           approve or reject these requests.
-        </p>
-      </div>
+        </p>{" "}
+      </div>{" "}
+
     </>
   );
 };
@@ -157,6 +218,7 @@ export const StockLiteData = () => {
           stock management and real-time order tracking without the complexity
           and high costs of traditional systems.
         </p>
+        <img src="stockLiteScreens.png"></img>
       </div>
 
       <div className="bg-neutral-800  dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
@@ -227,8 +289,7 @@ export const CicdLearningData = () => {
             <span className="font-semibold text-white">
               GitHub Actions Workflow:
             </span>{" "}
-            Automates the entire process from code checkout to Docker image
-            push.
+            Automates the entire process from code checkout to Docker img push.
           </li>
           <li>
             <span className="font-semibold text-white">Maven Build:</span>{" "}
@@ -239,7 +300,7 @@ export const CicdLearningData = () => {
             <span className="font-semibold text-white">
               Docker Integration:
             </span>{" "}
-            Creates and pushes Docker images to Docker Hub after building the
+            Creates and pushes Docker imgs to Docker Hub after building the
             application.
           </li>
           <li>
