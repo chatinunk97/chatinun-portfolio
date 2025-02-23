@@ -3,7 +3,7 @@ import React from "react";
 import { FaHome } from "react-icons/fa";
 import { FloatingNav } from "./ui/floating-navbar";
 import { BsFileCodeFill } from "react-icons/bs";
-import { IoSchool } from "react-icons/io5";
+import { TiContacts } from "react-icons/ti";
 export function FloatingNavBar() {
   const navItems = [
     {
@@ -19,9 +19,9 @@ export function FloatingNavBar() {
       ),
     },
     {
-      name: "Experiences",
-      link: "#timeline",
-      icon: <IoSchool className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      name: "Contacts",
+      link: "#contacts",
+      icon: <TiContacts className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
   ];
   return (

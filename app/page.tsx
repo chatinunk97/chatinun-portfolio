@@ -1,5 +1,7 @@
 import { ProjectCards } from "@/components/ProjectCards";
 import Hero from "@/components/Hero";
+import Footer from "@/components/Footer";
+import { FloatingNavBar } from "@/components/FloatingNav";
 // import { FloatingNavBar } from "@/components/FloatingNav";
 
 export default function Home() {
@@ -13,7 +15,8 @@ export default function Home() {
       <div className="max-w-5xl w-full">
         <Hero />
         <ProjectCards />
-        {/* <FloatingNavBar /> */}
+        <FloatingNavBar />
+        <Footer />
       </div>
     </main>
   );

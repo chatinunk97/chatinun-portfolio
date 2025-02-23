@@ -2,13 +2,40 @@ import React from "react";
 import { Spotlight } from "./ui/spotlight";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { FaLocationArrow } from "react-icons/fa";
+import japan from "@/public/japan.png";
+import thai from "@/public/thailand.png";
+import eng from "@/public/united-kingdom.png";
 import ButtonMagic from "./ButtonMagic";
 import Link from "next/link";
 import TechStackHero from "./TechStackHero";
-
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@radix-ui/react-tooltip";
+import Image from "next/image";
+const LanguagePopup = () => {
+  return (
+    <TooltipProvider key="languagePopup" delayDuration={10}>
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <span className="font-bold cursor-pointer underline">Trilingual</span>
+        </TooltipTrigger>
+        <TooltipContent>
+          <div className="flex gap-4 p-2 px-4 bg-white-200 rounded-lg">
+            <Image src={japan} alt="japan" width={30} height={30} />
+            <Image src={eng} alt="eng" width={30} height={30} />
+            <Image src={thai} alt="thai" width={30} height={30} />
+          </div>
+        </TooltipContent>
+      </Tooltip>
+    </TooltipProvider>
+  );
+};
 const Hero = () => {
   return (
-    <div className="pb-20 md:p-28 ">
+    <div className="pb-20 md:p-16 ">
       <div>
         <Spotlight
           className="top-40 -left-10 md:-lef5-32 md:-top-20 h-screen"
@@ -35,10 +62,13 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
             words="Fueled by Innovation, Driven to learn, Built to Create"
           />
-          <p className="text-center md:tracking-wide mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I&apos;m Chatinun, a Trilingual Developer based in Japan
-          </p>
-          <Link href={"/#projects"}>
+          <div className="w-full h-full text-center md:tracking-wide text-sm md:text-lg lg:text-2xl">
+            Hi, I&apos;m Chatinun, a <LanguagePopup /> Developer based in Japan
+          </div>
+          <Link
+            className=" w-60 md:mt-10 py-5 flex items-center justify-center"
+            href={"/#projects"}
+          >
             <ButtonMagic
               title={"Show my Work"}
               icon={<FaLocationArrow />}
