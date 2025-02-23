@@ -13,11 +13,11 @@ import { FaGithub } from "react-icons/fa";
 const RankingGameData = () => {
   return (
     <>
-      <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
-        <span className="text-base md:text-3xl font-sans font-bold text-neutral-700 dark:text-neutral-200">
+      <div className="bg-neutral-800  dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
+        <span className="text-base md:text-3xl font-sans font-bold text-neutral-200 dark:text-neutral-200">
           A Smart Ranking Game Powered by Graphs and DFS Algorithm
         </span>
-        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+        <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
           An interactive React application built with TypeScript, designed to
           explore graph data structures through a dynamic ranking system. The
           game leverages
@@ -36,8 +36,8 @@ const RankingGameData = () => {
           className="h-full w-full mx-auto object-contain"
         />
       </div>
-      <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
-        <span className="text-base md:text-3xl font-sans font-bold text-neutral-700 dark:text-neutral-200">
+      <div className="bg-neutral-800  dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
+        <span className="text-base md:text-3xl font-sans font-bold text-neutral-200 dark:text-neutral-200">
           Optimized Ranking Using Graphs and DFS
         </span>
         <Image
@@ -47,7 +47,7 @@ const RankingGameData = () => {
           width="500"
           className="h-full w-full mx-auto object-contain rounded-lg"
         />
-        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+        <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
           In ranking systems, direct comparisons grow quickly—{" "}
           <span className="font-semibold text-white">N! comparisons</span> for N
           players. However, using DFS and directed graphs, we reduce this to at
@@ -55,7 +55,7 @@ const RankingGameData = () => {
           <span className="font-semibold text-white"> N-1 comparisons </span> in
           the best case.
         </p>
-        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+        <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
           Each win is a directed edge in a graph (e.g., 1 → 3 means 1 defeats
           3).
           <span className="font-semibold text-white">
@@ -63,7 +63,7 @@ const RankingGameData = () => {
             DFS infers indirect wins, eliminating unnecessary matches.
           </span>
         </p>
-        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+        <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
           For example, with 1 → 2 → 4 → 5, adding 6 → 1{" "}
           <span className="font-semibold text-white">
             {" "}
@@ -87,11 +87,11 @@ const RankingGameData = () => {
 const CloudClockData = () => {
   return (
     <>
-      <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
-        <span className="text-base md:text-3xl font-sans font-bold text-neutral-700 dark:text-neutral-200">
+      <div className="bg-neutral-800  dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
+        <span className="text-base md:text-3xl font-sans font-bold text-neutral-200 dark:text-neutral-200">
           ClockIn - Employee Time Tracking System
         </span>
-        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+        <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
           ClockIn is a comprehensive time-tracking system designed to manage
           employee attendance and time-off requests. The system includes
           validation features, user role management, GPS-based clocking, and
@@ -100,31 +100,31 @@ const CloudClockData = () => {
         </p>
       </div>
 
-      <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
-        <span className="text-base md:text-3xl font-sans font-bold text-neutral-700 dark:text-neutral-200">
+      <div className="bg-neutral-800  dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
+        <span className="text-base md:text-3xl font-sans font-bold text-neutral-200 dark:text-neutral-200">
           Key Features of ClockIn System
         </span>
 
-        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+        <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
           <span className="font-semibold text-white">Validation Features</span>:
           The system supports Google account and username/password login,
           location checking, and validation for every user action. For mobile
           users, location validation ensures accurate time tracking.
         </p>
-        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+        <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
           <span className="font-semibold text-white">Clock In/Clock Out</span>:
           Employees can clock in or out via GPS-based validation. If the user is
           late to clock in, they must provide a reason. Multiple clock-ins/outs
           per day are allowed, with the time, date, and GPS data captured for
           each action.
         </p>
-        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+        <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
           <span className="font-semibold text-white">Employee Reports</span>:
           Users can view their clock-in history with filters for date range,
           department, or position. Reports are exportable to Excel/CSV for easy
           HR management.
         </p>
-        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+        <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
           <span className="font-semibold text-white">
             Form Submits & Approvals
           </span>
@@ -139,14 +139,14 @@ const CloudClockData = () => {
 const StockLiteData = () => {
   return (
     <>
-      <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
-        <span className="text-base md:text-3xl font-sans font-bold text-neutral-700 dark:text-neutral-200">
+      <div className="bg-neutral-800  dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
+        <span className="text-base md:text-3xl font-sans font-bold text-neutral-200 dark:text-neutral-200">
           Stock Lite - WMS and POS System
         </span>
         <p className="font-sans italic">
           Demo credentials username : demoadmin pw : admindemo
         </p>
-        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+        <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
           Stock Lite is a web-based solution designed to simplify inventory
           management and transaction processes for small and medium-sized
           enterprises (SMEs). By combining Warehouse Management System (WMS) and
@@ -156,16 +156,16 @@ const StockLiteData = () => {
         </p>
       </div>
 
-      <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
-        <span className="text-base md:text-3xl font-sans font-bold text-neutral-700 dark:text-neutral-200">
+      <div className="bg-neutral-800  dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
+        <span className="text-base md:text-3xl font-sans font-bold text-neutral-200 dark:text-neutral-200">
           Key Features of Stock Lite
         </span>
 
-        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+        <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
           Stock Lite offers the essential features SMEs need for efficient
           operations:
         </p>
-        <ul className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl list-disc pl-6">
+        <ul className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl list-disc pl-6">
           <li>
             <span className="font-semibold text-white">User Management:</span>{" "}
             Roles include Super Admin, Employee, and Supervisor.
@@ -185,7 +185,7 @@ const StockLiteData = () => {
             stock in real-time.
           </li>
         </ul>
-        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+        <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
           Designed for ease of use, Stock Lite ensures that businesses can
           efficiently track inventory and process transactions, all while
           maintaining simplicity and cost-effectiveness.
@@ -198,12 +198,12 @@ const StockLiteData = () => {
 const CicdLearningData = () => {
   return (
     <>
-      <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
-        <span className="text-base md:text-3xl font-sans font-bold text-neutral-700 dark:text-neutral-200">
+      <div className="bg-neutral-800  dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
+        <span className="text-base md:text-3xl font-sans font-bold text-neutral-200 dark:text-neutral-200">
           CI/CD Learning Project
         </span>
         <p className="font-sans italic">No demo available for this project.</p>
-        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+        <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
           This project demonstrates the implementation of a Continuous
           Integration and Continuous Deployment (CI/CD) pipeline using GitHub
           Actions, Maven, and Docker. The pipeline automates the build, test,
@@ -211,15 +211,15 @@ const CicdLearningData = () => {
         </p>
       </div>
 
-      <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
-        <span className="text-base md:text-3xl font-sans font-bold text-neutral-700 dark:text-neutral-200">
+      <div className="bg-neutral-800  dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
+        <span className="text-base md:text-3xl font-sans font-bold text-neutral-200 dark:text-neutral-200">
           Key Features of the CI/CD Pipeline
         </span>
-        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+        <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
           This project demonstrates a fully automated CI/CD pipeline with the
           following features:
         </p>
-        <ul className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl list-disc pl-6">
+        <ul className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl list-disc pl-6">
           <li>
             <span className="font-semibold text-white">
               GitHub Actions Workflow:
@@ -246,20 +246,20 @@ const CicdLearningData = () => {
             Enables multi-platform builds to support different architectures.
           </li>
         </ul>
-        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+        <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
           The pipeline ensures seamless integration and deployment, streamlining
           the workflow and reducing manual steps in the development process.
         </p>
       </div>
 
-      <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
-        <span className="text-base md:text-3xl font-sans font-bold text-neutral-700 dark:text-neutral-200">
+      <div className="bg-neutral-800  dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
+        <span className="text-base md:text-3xl font-sans font-bold text-neutral-200 dark:text-neutral-200">
           Lessons Learned & Mistakes
         </span>
-        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+        <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
           During the implementation, several mistakes and lessons were learned:
         </p>
-        <ul className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl list-disc pl-6">
+        <ul className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl list-disc pl-6">
           <li>
             <span className="font-semibold text-white">
               Build Context Issues:
@@ -282,7 +282,7 @@ const CicdLearningData = () => {
             the importance of reviewing logs and step-by-step analysis.
           </li>
         </ul>
-        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+        <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
           Key takeaway: Always set the build context explicitly to "." in Docker
           to ensure that workflow-generated files are included.
         </p>
@@ -295,7 +295,7 @@ const AIadvisorBudgetData = () => {
   return (
     <>
       {" "}
-      <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
+      <div className="bg-neutral-800  dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
         Coming soon..
       </div>
     </>
