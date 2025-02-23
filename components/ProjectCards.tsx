@@ -61,10 +61,10 @@ export const RankingGameData = () => {
           </span>
         </p>
         <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
-          For example, with 1 → 2 → 4 → 5, adding 6 → 1{" "}
+          For example, with 1 → 2 → 4 → 5 and 1 → 3  adding 6 → 1{" "}
           <span className="font-semibold text-white">
             {" "}
-            automatically grants 6 wins{" "}
+            automatically grants 4 wins{" "}
           </span>
           over 2, 3, 4, and 5 without extra matches. This minimizes comparisons
           significantly.
