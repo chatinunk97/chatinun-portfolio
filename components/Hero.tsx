@@ -62,10 +62,13 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
             words="Fueled by Innovation, Driven to learn, Built to Create"
           />
-          <div className="text-center md:tracking-wide mb-4 text-sm md:text-lg lg:text-2xl">
+          <div className="w-full h-full text-center md:tracking-wide text-sm md:text-lg lg:text-2xl">
             Hi, I&apos;m Chatinun, a <LanguagePopup /> Developer based in Japan
           </div>
-          <Link href={"/#projects"}>
+          <Link
+            className=" w-60 md:mt-10 py-5 flex items-center justify-center"
+            href={"/#projects"}
+          >
             <ButtonMagic
               title={"Show my Work"}
               icon={<FaLocationArrow />}

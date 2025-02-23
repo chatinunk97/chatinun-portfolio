@@ -22,7 +22,7 @@ const techStack = [
 ];
 const TechStackHero = () => {
   return (
-    <div className="flex flex-wrap md:flex-nowrap gap-2 md:gap-10 justify-center items-center p-5 py-20">
+    <div className="flex flex-wrap md:flex-nowrap gap-2 md:gap-10 justify-center items-center md:p-5 md:py-20">
       {techStack.map((e) => (
         <TooltipProvider key={e.name} delayDuration={10}>
           <Tooltip>

@@ -3,31 +3,79 @@ import rankGame from "@/public/rankGame.gif";
 import cloudClock from "@/public/cloudClock.gif";
 import stockLite from "@/public/stockLite.png";
 import rankingShot from "@/public/rankingShot.png";
+import resultCheck from "@/public/resultCheck.png";
+import dfs from "@/public/dfs.png";
 export const RankingGameData = () => {
   return (
-    <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
-      <span className="text-base md:text-3xl font-sans font-bold text-neutral-700 dark:text-neutral-200">
-        A Smart Ranking Game Powered by Graphs and DFS Algorithm
-      </span>
-      <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
-        An interactive React application built with TypeScript, designed to
-        explore graph data structures through a dynamic ranking system. The game
-        leverages
-        <span className="font-semibold text-white">
-          {" "}
-          Depth-First Search (DFS)
-        </span>{" "}
-        to intelligently eliminate unnecessary matches, resolving indirect wins
-        and optimizing the ranking process.
-      </p>
-      <Image
-        src={rankingShot}
-        alt="Macbook mockup from Aceternity UI"
-        height="500"
-        width="500"
-        className="h-full w-full mx-auto object-contain"
-      />
-    </div>
+    <>
+      <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
+        <span className="text-base md:text-3xl font-sans font-bold text-neutral-700 dark:text-neutral-200">
+          A Smart Ranking Game Powered by Graphs and DFS Algorithm
+        </span>
+        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+          An interactive React application built with TypeScript, designed to
+          explore graph data structures through a dynamic ranking system. The
+          game leverages
+          <span className="font-semibold text-white">
+            {" "}
+            Depth-First Search (DFS)
+          </span>{" "}
+          to intelligently eliminate unnecessary matches, resolving indirect
+          wins and optimizing the ranking process.
+        </p>
+        <Image
+          src={rankingShot}
+          alt="Macbook mockup from Aceternity UI"
+          height="500"
+          width="500"
+          className="h-full w-full mx-auto object-contain"
+        />
+      </div>
+      <div className="bg-[#F5F5F7] dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
+        <span className="text-base md:text-3xl font-sans font-bold text-neutral-700 dark:text-neutral-200">
+          Optimized Ranking Using Graphs and DFS
+        </span>
+        <Image
+          src={dfs}
+          alt="Macbook mockup from Aceternity UI"
+          height="500"
+          width="500"
+          className="h-full w-full mx-auto object-contain rounded-lg"
+        />
+        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+          In ranking systems, direct comparisons grow quickly—{" "}
+          <span className="font-semibold text-white">N! comparisons</span> for N
+          players. However, using DFS and directed graphs, we reduce this to at
+          most{" "}
+          <span className="font-semibold text-white"> N-1 comparisons </span> in
+          the best case.
+        </p>
+        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+          Each win is a directed edge in a graph (e.g., 1 → 3 means 1 defeats
+          3).
+          <span className="font-semibold text-white">
+            {" "}
+            DFS infers indirect wins, eliminating unnecessary matches.
+          </span>
+        </p>
+        <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+          For example, with 1 → 2 → 4 → 5, adding 6 → 1{" "}
+          <span className="font-semibold text-white">
+            {" "}
+            automatically grants 6 wins{" "}
+          </span>
+          over 2, 3, 4, and 5 without extra matches. This minimizes comparisons
+          significantly.
+        </p>
+        <Image
+          src={resultCheck}
+          alt="Result check image"
+          height="500"
+          width="500"
+          className="h-full w-full mx-auto object-contain"
+        />
+      </div>
+    </>
   );
 };
 
