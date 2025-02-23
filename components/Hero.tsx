@@ -2,9 +2,6 @@ import React from "react";
 import { Spotlight } from "./ui/spotlight";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { FaLocationArrow } from "react-icons/fa";
-import japan from "@/public/japan.png";
-import thai from "@/public/thailand.png";
-import eng from "@/public/united-kingdom.png";
 import ButtonMagic from "./ButtonMagic";
 import Link from "next/link";
 import TechStackHero from "./TechStackHero";
@@ -14,7 +11,6 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@radix-ui/react-tooltip";
-import Image from "next/image";
 const LanguagePopup = () => {
   return (
     <TooltipProvider key="languagePopup" delayDuration={10}>
@@ -24,9 +20,9 @@ const LanguagePopup = () => {
         </TooltipTrigger>
         <TooltipContent>
           <div className="flex gap-4 p-2 px-4 bg-white-200 rounded-lg">
-            <Image src={japan} alt="japan" width={30} height={30} />
-            <Image src={eng} alt="eng" width={30} height={30} />
-            <Image src={thai} alt="thai" width={30} height={30} />
+            <img src="japan.png" alt="japan" width={30} height={30} />
+            <img src="united-kingdom.png" alt="eng" width={30} height={30} />
+            <img src="thailand.png" alt="thai" width={30} height={30} />
           </div>
         </TooltipContent>
       </Tooltip>
