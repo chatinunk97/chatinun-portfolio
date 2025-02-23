@@ -91,9 +91,7 @@ export const CloudClockData = () => {
         <span className="text-base md:text-3xl font-sans font-bold text-neutral-200 dark:text-neutral-200">
           ClockIn - Employee Time Tracking System
         </span>
-        <p className="font-sans italic">
-          For demo please contact me directly
-        </p>
+        <p className="font-sans italic">For demo please contact me directly</p>
         <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
           ClockIn is a comprehensive time-tracking system designed to manage
           employee attendance and time-off requests. The system includes
@@ -147,7 +145,9 @@ export const StockLiteData = () => {
           Stock Lite - WMS and POS System
         </span>
         <p className="font-sans italic">
-          Demo credentials <br/>username : demoadmin pw : admindemo (It may take sometime to spin up backend around 1-2min )
+          Demo credentials <br />
+          username : demoadmin pw : admindemo <br></br>(It may take some time to
+          spin up backend server 1-2min )
         </p>
         <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
           Stock Lite is a web-based solution designed to simplify inventory
@@ -286,8 +286,9 @@ export const CicdLearningData = () => {
           </li>
         </ul>
         <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
-          Key takeaway: Always set the build context explicitly to &rdquo;.&rdquo; in Docker
-          to ensure that workflow-generated files are included.
+          Key takeaway: Always set the build context explicitly to
+          &rdquo;.&rdquo; in Docker to ensure that workflow-generated files are
+          included.
         </p>
       </div>
     </>
