@@ -6,9 +6,6 @@ import cloudClock from "@/public/cloudClock.gif";
 import stockLite from "@/public/stockLite.png";
 import cicd from "@/public/cicd.png";
 import aiadvisor from "@/public/aiadvisor.png";
-import rankingShot from "@/public/rankingShot.png";
-import dfs from "@/public/dfs.png";
-import resultCheck from "@/public/resultCheck.png";
 import ReactPlayer from "react-player";
 export const RankingGameData = () => {
   return (

@@ -2,9 +2,6 @@ import React from "react";
 import { Spotlight } from "./ui/spotlight";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { FaLocationArrow } from "react-icons/fa";
-import japan from "@/public/japan.png";
-import thai from "@/public/thailand.png";
-import eng from "@/public/united-kingdom.png";
 import ButtonMagic from "./ButtonMagic";
 import Link from "next/link";
 import TechStackHero from "./TechStackHero";
@@ -14,7 +11,6 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@radix-ui/react-tooltip";
-import Image from "next/image";
 const LanguagePopup = () => {
   return (
     <TooltipProvider key="languagePopup" delayDuration={10}>
