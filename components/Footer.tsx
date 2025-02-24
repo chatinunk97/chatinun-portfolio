@@ -2,6 +2,7 @@ import { contactData } from "@/utils/data";
 import React from "react";
 import ButtonMagic from "./ButtonMagic";
 import { MdEmail } from "react-icons/md";
+import { FaFileDownload } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -22,6 +23,12 @@ const Footer = () => {
           <p>Copyright © 2025 Chatinun Komuthanon</p>
 
           <div className="flex gap-4 justify-center items-center">
+            <a
+              href="/ChatinunK-CV-202502.pdf"
+              download="ChatinunK-CV-202502.pdf"
+            >
+              <FaFileDownload size={40} />
+            </a>
             {contactData.map((e) => {
               return (
                 <a
