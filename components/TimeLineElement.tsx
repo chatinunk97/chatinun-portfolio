@@ -27,7 +27,9 @@ const TimeLineElement = ({
               </div>
               <p className="text-gray-400">{e.position}</p>
               <ul className=" mt-2">
-                {e.details.map((sentence)=>  <li>•&nbsp;&nbsp;{sentence}</li>)}
+                {e.details.map((sentence, i) => (
+                  <li key={i}>•&nbsp;&nbsp;{sentence}</li>
+                ))}
               </ul>
             </div>
           </li>
