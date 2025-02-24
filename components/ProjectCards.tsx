@@ -191,6 +191,10 @@ export const CloudClockData = () => {
           approve or reject these requests.
         </p>{" "}
       </div>{" "}
+      <div className="bg-neutral-800  dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
+         <img src="cloudClockdb.png"></img>
+
+      </div>{" "}
 
     </>
   );
@@ -252,6 +256,9 @@ export const StockLiteData = () => {
           efficiently track inventory and process transactions, all while
           maintaining simplicity and cost-effectiveness.
         </p>
+        <div className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
+          <img src="stocklitedb.png"></img>
+        </div>
       </div>
     </>
   );

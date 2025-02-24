@@ -16,7 +16,7 @@ export const contactData = [
   {
     platform: "mediuam",
     url: "https://medium.com/@chatinun.dev",
-    icon: <AiFillMediumCircle size={42} />,
+    icon: <AiFillMediumCircle size={43} />,
   },
 ];
 
@@ -68,6 +68,19 @@ export const workData = [
   },
 ];
 export const educationData = [
+  {
+    name: "Software Park CodeCamp",
+    period: "July 2023 - November 2023",
+    position: "Full Stack Developer",
+    icon: "codecamp.png",
+    details: [
+      "React JS -  Express JS",
+      "Javascript - HTML - CSS",
+      "SQL - Prisma - Tailwind - JSON Web Token",
+      "System and Database design",
+      "Led a team of 5 in the development",
+    ],
+  },
   {
     name: "Waseda University",
     period: "August 2019 - August 2020",

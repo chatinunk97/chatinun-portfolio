@@ -18,9 +18,10 @@ const Footer = () => {
             position="right"
           />
         </a>
-        <div className="flex flex-col justify-center items-center gap-2">
+        <div className="flex flex-col justify-center items-center gap-5">
           <p>Copyright © 2025 Chatinun Komuthanon</p>
-          <div className="flex gap-4">
+
+          <div className="flex gap-4 justify-center items-center">
             {contactData.map((e) => {
               return (
                 <a

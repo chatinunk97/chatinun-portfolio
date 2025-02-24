@@ -9,7 +9,7 @@ const TimeLineButton = ({
   choice: string;
 }) => {
   return (
-    <div className="border bg-gray-700 p-1 rounded-lg flex gap-5">
+    <div className="z-10 border bg-gray-700 p-1 rounded-lg flex gap-5">
       {["Work", "Education"].map((e) => {
         return (
           <div
