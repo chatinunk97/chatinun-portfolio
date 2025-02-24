@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://chatinun-k.com/previewimg.png",
+        url: "https://www.chatinun-k.com/previewimg.png",
         width: 1200,
         height: 630,
         alt: "Chatinun's Portfolio Preview",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: "Chatinun K - Software Engineer",
     description:
       "Trilingual software engineer specializing in Next.js, React, and Spring Boot.",
-    images: ["https://chatinun-k.com/previewimg.png"],
+    images: ["https://www.chatinun-k.com/previewimg.png"],
   },
 };
 
