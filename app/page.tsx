@@ -2,6 +2,7 @@ import { ProjectCards } from "@/components/ProjectCards";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import { FloatingNavBar } from "@/components/FloatingNav";
+import TimeLine from "@/components/TimeLine";
 // import { FloatingNavBar } from "@/components/FloatingNav";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       {/* This is the actual body of the web */}
       <div className="max-w-5xl w-full">
         <Hero />
+        <TimeLine />
         <ProjectCards />
         <FloatingNavBar />
         <Footer />
