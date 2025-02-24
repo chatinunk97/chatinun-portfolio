@@ -31,7 +31,7 @@ const LanguagePopup = () => {
 };
 const Hero = () => {
   return (
-    <header className="pb-20 md:p-16 ">
+    <div className="pb-20 md:p-16 ">
       <div>
         <Spotlight
           className="top-40 -left-10 md:-lef5-32 md:-top-20 h-screen"
@@ -74,7 +74,7 @@ const Hero = () => {
           <TechStackHero />
         </div>
       </div>
-    </header>
+    </div>
   );
 };
 

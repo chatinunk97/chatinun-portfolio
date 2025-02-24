@@ -5,13 +5,11 @@ const ButtonMagic = ({
   title,
   icon,
   position,
-  // handleClick,
   otherClasses,
 }: {
   title: string;
   icon: React.ReactNode;
   position: string;
-  // handleClick?: () => void;
   otherClasses?: string;
 }) => {
   return (
