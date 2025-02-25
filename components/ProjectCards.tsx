@@ -61,7 +61,7 @@ export const RankingGameData = () => {
           </span>
         </p>
         <p className="text-neutral-400  dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl">
-          For example, with 1 → 2 → 4 → 5 and 1 → 3  adding 6 → 1{" "}
+          For example, with 1 → 2 → 4 → 5 and 1 → 3 adding 6 → 1{" "}
           <span className="font-semibold text-white">
             {" "}
             automatically grants 4 wins{" "}
@@ -192,10 +192,8 @@ export const CloudClockData = () => {
         </p>{" "}
       </div>{" "}
       <div className="bg-neutral-800  dark:bg-neutral-800 p-8 md:p-14 rounded-3xl mb-4 flex flex-col gap-2">
-         <img src="cloudClockdb.png"></img>
-
+        <img src="cloudClockdb.png"></img>
       </div>{" "}
-
     </>
   );
 };
@@ -418,7 +416,7 @@ const projectData = [
       { techName: "Tailwind CSS", isHighlight: false },
       { techName: "Postgres", isHighlight: false },
     ],
-    demo: "https://stock-lite-front.vercel.app/",
+    demo: "https://clockin-react.vercel.app/",
     github: "https://github.com/chatinunk97/clockin-React",
     content: <CloudClockData />,
   },
@@ -435,7 +433,7 @@ const projectData = [
       { techName: "Tailwind CSS", isHighlight: false },
       { techName: "MySQL", isHighlight: false },
     ],
-    demo: "https://clockin-react.vercel.app/",
+    demo: "https://stock-lite-front.vercel.app/",
     github: "https://github.com/chatinunk97/StockLite_Front",
     content: <StockLiteData />,
   },
